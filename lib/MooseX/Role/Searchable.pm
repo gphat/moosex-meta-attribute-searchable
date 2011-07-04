@@ -54,7 +54,6 @@ sub get_searchable_hashref {
 
     for my $attr ($meta->get_all_attributes) {
         my $name = $attr->name;
-        next if $name eq '_trait_namespace' || $name eq 'id';
         next unless $href->{$name};
 
         my $field_name = $name;
