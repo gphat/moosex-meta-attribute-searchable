@@ -23,6 +23,7 @@ use Moose::Role;
 
     my $obj = MyObject->new(name => 'user');
     my $href = $obj->get_searchable_hashref;
+    # And then in your indexing code:
     $searchengine->index(id => $obj->id, $href);
 
 =head1 DESCRIPTION
