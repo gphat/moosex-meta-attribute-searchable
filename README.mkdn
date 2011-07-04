@@ -49,7 +49,7 @@ I am indexing are Moose objects.  This pair of roles makes it easy to mark
 which attributes should be included in the indexed document and optionally
 gives the ability to rename or specificy multiple names for an attribute.
 
-The optional <search_field_names> is useful when you have a single value that
+The optional `search_field_names` is useful when you have a single value that
 you'd like to index in multiple ways.  An example of this is a field that you
 might want searchable in both full-text and autocomplete situations.  In Solr
 I've used a "name" and "name_ngram" field in the schema, where the latter used
